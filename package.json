@@ -1,0 +1,29 @@
+{
+  "name": "javascript_node_racer",
+  "version": "1.0.0",
+  "description": "javascript racer with sockets for online multiplayer",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbaus42/javascript_node_racer.git"
+  },
+  "keywords": [
+    "sockets",
+    "node",
+    "javascript-racer"
+  ],
+  "author": "Santiago Baus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbaus42/javascript_node_racer/issues"
+  },
+  "homepage": "https://github.com/sbaus42/javascript_node_racer#readme",
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "express": "^4.13.3"
+  }
+}
