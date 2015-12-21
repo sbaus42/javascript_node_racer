@@ -1,0 +1,10 @@
+td {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border: solid black;
+}
+.active {
+  background-color: black;
+}
+
