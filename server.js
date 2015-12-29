@@ -13,8 +13,9 @@ app.get('/', function(request, response){
 });
 
 io.on('connection', function (socket) {
-  socket.emit('news', { hello: 'world' });
-  socket.on('other_event', function (data) {
+  // socket.emit('news', { hello: 'world' });
+  socket.on('key_move', function (data) {
+    socket.emit('go_ahead', { command:'ok to mooove' });
     console.log(data);
   });
 });
