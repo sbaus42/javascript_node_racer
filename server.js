@@ -15,7 +15,13 @@ app.get('/', function(request, response){
 io.on('connection', function (socket) {
   // socket.emit('news', { hello: 'world' });
   socket.on('key_move', function (data) {
-    socket.emit('go_ahead', { command:'ok to mooove' });
-    console.log(data);
+    if (data["command"] === 'move_right') {
+      io.sockets.emit('go_ahead', { command:'move_right' });
+      console.log(data);
+    }
+    if (data["command"] === 'move_left') {
+      io.sockets.emit('go_ahead', { command:'move_left' });
+      console.log(data);
+    }
   });
 });
