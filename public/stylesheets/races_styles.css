@@ -1,6 +1,7 @@
 td {
   width: 20px;
   height: 20px;
+  padding: 0px;
   display: inline-block;
   border: solid black;
 }
